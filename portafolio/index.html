@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 "/>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <!--
@@ -20,7 +21,7 @@
         <ul id="ul_nav">
             <li id="li_nav" class="active"> <a href="#"> Inicio</a></li>
             <li id="li_nav"> <a href="#"> Acerca</a></li>
-            <li id="li_nav"> <a href="#"> Trabajos</a></li>
+            <li id="li_nav"> <a href="#"> Portafolio</a></li>
             <li id="li_nav"> <a href="#"> Contacto</a></li>
         </ul>
     </nav>
@@ -43,33 +44,89 @@
             </article>
     </div>
 
+    
     <div class="Container_aboutMe">
+        <div class="container_all">
+        <div class="img_me">
+            <section id="border">
+
+            </section>
         <img src="/img/photo_user.jpg" alt="photo_user">
+        </div>
+
+        <article>
         <section id="title">
         <p>About Me</p>
         </section>
-        <article>
+        
             <section id="text">
                 <p>
+                
                 Lorem Ipsum is simply dummy text of the printing and 
                 typesetting industry. Lorem Ipsum has been the industry's 
                 standard dummy text ever since the 1500s, when an unknown 
                 printer took a galley of type and scrambled it to make a 
-                type specimen book. It has survived not only five centuries,
-                 but also the leap into electronic typesetting, remaining 
-                 essentially unchanged. It was popularised in the 1960s with 
-                 the release of Letraset sheets containing Lorem Ipsum 
-                 passages, and more recently with desktop publishing software 
-                 like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </section>
-        </article>
+                type specimen book. <br/><br/>
 
-        <div> 
-            <button class="button button1" > Contactarme </button> 
-            <button class="button button1" > Donwload CV </button> 
-        </div>
+                It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining 
+                essentially unchanged. It was popularised in the 1960s with 
+                the release of Letraset sheets containing Lorem Ipsum 
+                passages, and more recently with desktop publishing software 
+                like Aldus PageMaker including versions of Lorem Ipsum.
+                
+            </p>
+            <div> 
+                <button class="active button button1" > Contactarme </button> 
+                <button class="button button2" > Donwload CV </button> 
+            </div>
+            </section>
+            
+
+        </article>
     </div>
+    </div>
+
+    <div class="wrapper">
+        <!-- filter Items -->
+        <nav>
+          <div class="items">
+            <span class="item active" data-name="all">Todos</span>
+            <span class="item" data-name="web">Web</span>
+            <span class="item" data-name="desktop">Escritorio</span>
+            <span class="item" data-name="mobile">Movil</span>
+            <span class="item" data-name="database">Bases de datos</span>
+            <span class="item" data-name="rest">API Rest</span>
+          </div>
+        </nav>
+        <!-- filter Images -->
+        <div class="gallery">
+           <div class="image" data-name="web"><span><img src="/img/web001_html.png" alt=""></span></div>
+           <div class="image" data-name="web"><span><img src="/img/web002_html_css_js.png" alt=""></span></div>
+           <div class="image" data-name="mobile"><span><img src="/img/web002_html_css_js_movil.png" alt=""></span></div>
+           <div class="image" data-name="Web"><span><img src="/img/web003_html_php.png" alt=""></span></div>
+           <div class="image" data-name="web"><span><img src="/img/web003_html_php_movil.png" alt=""></span></div>
+            
+
+           <div class="image" data-name="desktop"><span><img src="/img/photo_user.jpg" alt=""></span></div>
+           <div class="image" data-name="mobile"><span><img src="/img/movil.png" alt=""></span></div>
+           <div class="image" data-name="database"><span><img src="/img/base2.png" alt=""></span></div>
+           <div class="image" data-name="rest"><span><img src="/img/photo_user.jpg" alt=""></span></div>
+           
+        </div>
+      </div>
+      <!-- fullscreen img preview box -->
+      <div class="preview-box">
+        <div class="details">
+          <span class="title">Image Category: <p>hola mundo xd</p></span>
+          <i class="fa fa-facebook" ></i>
+          <span class="icon fas fa-times" style="font-size:25px;color:rgb(18, 18, 19);text-shadow:2px 2px 4px #000000; position: relative;"></span>
+        </div>
+        <div class="image-box"><img src="" alt=""></div>
+      </div>
+      <div class="shadow"></div>
+    
+      <script src="/js/gallery.js"></script>
 
 
     
