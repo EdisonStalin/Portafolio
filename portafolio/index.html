@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 "/>
-    <link rel="stylesheet" href="/css/style.css">
+    <meta http-equiv="X-UA-Compatible content=IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale= "1.0" />
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="/portafolio/js/screen.js"></script>
 </head>
 <body>
     <!--
-    <div class="social">
-        <i class="fa fa-facebook" style="font-size:25px;color:blue;text-shadow:2px 2px 4px #000000; position: relative;"></i>
-        <i class="fa fa-github" style="font-size:25px;color:black;text-shadow:2px 2px 4px #000000; position: relative;"></i>
-        <i class="fa fa-whatsapp" style="font-size:25px;color:rgb(21, 180, 21);text-shadow:2px 2px 4px #000000; position: relative;"></i>
+    <div class="social>
+        <i class="fa fa-facebook style=font-size:25px;--color:blue;text-shadow:2px 2px 4px #000000; position: relative;></i>
+        <i class="fa fa-github style=font-size:25px;--color:black;text-shadow:2px 2px 4px #000000; position: relative;></i>
+        <i class="fa fa-whatsapp style=font-size:25px;--color:rgb(21, 180, 21);text-shadow:2px 2px 4px #000000; position: relative;></i>
     </div>
     -->
     <nav class="container_nav">
@@ -28,18 +29,21 @@
 
     
     <div class="container_user">
-            <img src="/img/photo_user.jpg" alt="photo_user">
+        <div class="container_photo">
+            <img src="/portafolio/img/developer.jpg" alt="photo_user">
+        </div>
+
             <p id="portafolio">Portafolio.</p>
             <article class="content_userinfo">
                 <section id="subtitle">
-                    <p >Hola</p>
+                    <span >Hola!</span>
                 </section>
 
                 <section id="title">
                     <h1>Yo soy Edison Jumbo</h1>
                 </section>
                 <section id="text">
-                    <p >Analista en Sistemas</p>
+                    <span >Analista de Sistemas</span>
                 </section>
             </article>
     </div>
@@ -51,34 +55,39 @@
             <section id="border">
 
             </section>
-        <img src="/img/photo_user.jpg" alt="photo_user">
+        <img src="/portafolio/img/photo_user.jpg" alt="photo_user">
         </div>
 
         <article>
         <section id="title">
-        <p>About Me</p>
+        <p>Sobre Mí</p>
         </section>
         
             <section id="text">
-                <p>
+            <p>
                 
-                Lorem Ipsum is simply dummy text of the printing and 
-                typesetting industry. Lorem Ipsum has been the industry's 
-                standard dummy text ever since the 1500s, when an unknown 
-                printer took a galley of type and scrambled it to make a 
-                type specimen book. <br/><br/>
+                    Estudiante egresado de la Escuela de 
+                    Formación de Tecnólogos de la EPN, 
+                    apasionado por el Desarrollo de Software y 
+                    don para crear soluciones eficientes en el 
+                    menor tiempo posible. <br/><br/>
 
-                It has survived not only five centuries,
-                but also the leap into electronic typesetting, remaining 
-                essentially unchanged. It was popularised in the 1960s with 
-                the release of Letraset sheets containing Lorem Ipsum 
-                passages, and more recently with desktop publishing software 
-                like Aldus PageMaker including versions of Lorem Ipsum.
+                    Me encantaría formar parte de su grupo de 
+                    trabajo para poder aplicar todos mis 
+                    conocimientos y, al mismo tiempo, que me 
+                    permita desarrollarme profesionalmente dando
+                    todo de mí.<br/><br/>
+
+                    Busco siempre mejorar día a día, de forma autodidactá
+                    para estar a la vanguardia en el desarrollo de sistemas Web amigables 
+                    y eficientes.
+
+
                 
             </p>
             <div> 
-                <button class="active button button1" > Contactarme </button> 
-                <button class="button button2" > Donwload CV </button> 
+                <button class="active button button1"> Contactarme </button> 
+                <a href="CV/CV-Edison.Jumbo.pdf" download><button class="button button2" > Donwload CV </button>  </a>
             </div>
             </section>
             
@@ -87,50 +96,92 @@
     </div>
     </div>
 
-    <div class="wrapper">
-        <!-- filter Items -->
-        <nav>
-          <div class="items">
-            <span class="item active" data-name="all">Todos</span>
-            <span class="item" data-name="web">Web</span>
-            <span class="item" data-name="desktop">Escritorio</span>
-            <span class="item" data-name="mobile">Movil</span>
-            <span class="item" data-name="database">Bases de datos</span>
-            <span class="item" data-name="rest">API Rest</span>
-          </div>
-        </nav>
-        <!-- filter Images -->
-        <div class="gallery">
-           <div class="image" data-name="web"><span><img src="/img/web001_html.png" alt=""></span></div>
-           <div class="image" data-name="web"><span><img src="/img/web002_html_css_js.png" alt=""></span></div>
-           <div class="image" data-name="mobile"><span><img src="/img/web002_html_css_js_movil.png" alt=""></span></div>
-           <div class="image" data-name="Web"><span><img src="/img/web003_html_php.png" alt=""></span></div>
-           <div class="image" data-name="web"><span><img src="/img/web003_html_php_movil.png" alt=""></span></div>
-            
+    <div class="container_skill"> 
+        <div id="box" class="container_box">    
 
-           <div class="image" data-name="desktop"><span><img src="/img/photo_user.jpg" alt=""></span></div>
-           <div class="image" data-name="mobile"><span><img src="/img/movil.png" alt=""></span></div>
-           <div class="image" data-name="database"><span><img src="/img/base2.png" alt=""></span></div>
-           <div class="image" data-name="rest"><span><img src="/img/photo_user.jpg" alt=""></span></div>
-           
+            <section id="title">
+                <p>Habilidades</p>
+            </section>
+
+            <section id="sub_title">
+                <p>frontend</p>
+            </section>
+
+            <div class="card">
+                <i class="fab fa-html5"><p>html5</p></i>
+                <i class="fab fa-css3-alt"><p>css3</p></i>
+                <i class="fab fa-js"><p>javascript</p></i>
+                
+
+            </div>
+            <section id="sub_title">
+                <p>backend</p>
+            </section>
+            <div class="card">
+                <i class="fab fa-php"><p>php</p></i>
+                <i class="fab fa-java"><p>java</p></i>
+                <i class="fab fa-python"><p>python</p></i>
+            </div>
         </div>
-      </div>
-      <!-- fullscreen img preview box -->
-      <div class="preview-box">
-        <div class="details">
-          <span class="title">Image Category: <p>hola mundo xd</p></span>
-          <i class="fa fa-facebook" ></i>
-          <span class="icon fas fa-times" style="font-size:25px;color:rgb(18, 18, 19);text-shadow:2px 2px 4px #000000; position: relative;"></span>
-        </div>
-        <div class="image-box"><img src="" alt=""></div>
-      </div>
-      <div class="shadow"></div>
-    
-      <script src="/js/gallery.js"></script>
-
-
-    
-
-    
+    </div>
 </body>
+
+<div class="container_contact">
+    <section id="title">
+    <p>contacta me</p>
+    </section>
+    <div class="contact_info">
+        <div id="info">
+            <p>Contact info</p>
+        </div>
+        <ul id="items_info">
+            <li>
+                <span class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <span class="icon_text">
+                    Quito - Ecuador
+                </span>
+            </li>
+
+            <li>
+                <span class="icon">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon_text">
+                    edison.jumbo@epn.edu.ec
+                </span>
+            </li>
+            <li>
+                <span class="icon">
+                    <i class="fas fa-phone-alt"></i>
+                </span>
+                <span class="icon_text">
+                    09-6310-7510
+                </span>
+            </li>
+        </ul>
+
+        
+        <div id="info">
+            <p>Follow me</p>
+        </div>
+        <section id="items_follow">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin-in"></i>
+            
+        </section>
+    </div>
+
+
+    <div class="send_info">
+
+    </div>
+
+</div>
+
+
+
+
 </html>
