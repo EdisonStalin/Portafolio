@@ -1,0 +1,67 @@
+/*footer*/
+.container_contact{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.container_contact #title{
+    position: relative;
+    left: 10%;
+    top: 50px;
+    float: left;
+    color: white;
+    width: 80%;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 178, 13, 0.911);
+    text-transform: capitalize;
+}
+
+.container_contact .contact_info{
+    position: relative;
+    top: 150px;
+    width: 40%;
+    height: 500px;
+    
+}
+.container_contact .contact_info #info{
+    position: relative;
+    color: #CCCCCC;
+    top: 50px;
+    left: 10%;
+}
+
+.container_contact .contact_info #items_info{
+    position: relative;
+    top: 50px;
+    left: 10%;
+    line-height: 3;
+    color: #727b86;
+    list-style-type: none;
+
+}
+
+.contact_info #items_info .icon{
+    margin: 10px;
+}
+
+
+/*icons contact*/
+.fa-map-marker-alt, .fa-envelope, .fa-phone-alt{
+    font-size: 15px;
+    color: #727b86;
+}
+/*social networks*/
+.fa-facebook-f, .fa-github, .fa-linkedin-in{
+    font-size: 20px;
+    color: #727b86;
+}
+
+.contact_info #items_follow i{
+    position: relative;
+    top: 60px;
+    left: 10%;
+    margin: 5px;
+}
