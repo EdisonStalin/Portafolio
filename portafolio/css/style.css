@@ -196,8 +196,6 @@ body{
     width: 100%;
     font-size: 65px;
     line-height: 70px;
-
-    
 }
 
 .content_userinfo #text{
@@ -259,7 +257,7 @@ body{
 
 .container_all #title{
     position: relative;
-    left: 5%;
+    left: 10%;
     top: 50px;
     float: left;
     color: var(--color-info-100);
@@ -327,14 +325,18 @@ body{
   top: 30px;
 }
 
-.container_box #title{
-  text-align: left;
-  height: 50px;
-  color: var(--color-primary-100);
-  font-size: 40px;
-  font-weight: bold;
-  border-bottom-style: solid;
-  border-bottom-color: var(--color-warning-500);
+.container_skill #title{
+    position: relative;
+    left: 10%;
+    top: 50px;
+    float: left;
+    color: white;
+    width: 80%;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 178, 13, 0.911);
+    text-transform: capitalize;
 }
 
 .container_box #sub_title{
@@ -400,19 +402,21 @@ body{
   color: rgba(255, 178, 13, 0.911);
 }
 
-/*footer*/
-.container_contact{
-    position: relative;
-    background-color: #333;
-    width: 100%;
-    height: 770px;
+
+/*servicios*/
+
+.services{
+  width: 100%;
+  height: 1000px;
+  padding: 10px 0 10px 0;
+
 }
 
-.container_contact #title{
+.services #title{
     position: relative;
     left: 10%;
     top: 50px;
-    float: left;
+    text-align: left;
     color: white;
     width: 80%;
     font-size: 40px;
@@ -422,76 +426,56 @@ body{
     text-transform: capitalize;
 }
 
-.container_contact .contact_info{
+.services .container_box_card{
     position: relative;
-    top: 150px;
-    width: 40%;
-    height: 500px;
-    
-}
-.container_contact .contact_info #info{
-    position: relative;
-    color: #CCCCCC;
-    top: 50px;
-    left: 10%;
-}
-
-.container_contact .contact_info #items_info{
-    position: relative;
-    top: 50px;
-    left: 10%;
-    line-height: 3;
-    color: #727b86;
-    list-style-type: none;
-
-}
-
-.contact_info #items_info .icon{
-    margin: 10px;
-}
-
-
-/*icons contact*/
-.fa-map-marker-alt, .fa-envelope, .fa-phone-alt{
-    font-size: 15px;
-    color: #727b86;
-}
-/*social networks*/
-.fa-facebook-f, .fa-github, .fa-linkedin-in{
-    font-size: 20px;
-    color: #727b86;
-}
-
-.contact_info #items_follow i{
-    position: relative;
-    top: 60px;
-    left: 10%;
-    margin: 5px;
-}
-
-/*servicios*/
-
-.services{
-  width: 100%;
-  height: 500px;
-  position: relative;
-  padding: 10px 0 10px 0;
-  background-color: black;
-}
-
-.container_box_card{
+    top: 70px;
     display: flex;
     flex-wrap: wrap;
-    height: 480px;
-    padding: 10px;
-    
+    height: 500px;
+    padding: 20px;
+
 }
 
 .container_box_card .box_card{
-    width: 49%;
+    width: calc(97.5% / 2);
     height: 230px;
-    background-color: blue;
     text-align: center;
     margin: 3px;
-    border: 2px solid red;
+    border: 2px solid black;
+}
+
+.box_card #card_image{
+    width: 100%;
+    font-size: 60px;
+    color: #CCC;
+    text-align: left;
+}
+
+.box_card #card_title{
+    font-size: 35px;
+    color: #CCC;
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.box_card #card_info{
+    padding: 10px;
+    font-size: 22px;
+    color:#ccc;
+    text-align: justify;
+}
+
+#card_one{
+    background-color: #0004ff;
+}
+
+#card_two{
+    background-color: #e0d420;
+}
+#card_tree{
+    background-color: #c73fe2;
+}
+#card_for{
+    background-color: #31cf39;
 }
